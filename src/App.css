@@ -1,0 +1,113 @@
+body {
+  background: #f8fafc;
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  color: #1e293b;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: #f8fafc;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.quiz-container {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 6px 32px rgba(30,41,59,0.10);
+  max-width: 600px;
+  margin: 2.5rem auto;
+  padding: 2.5rem 2rem;
+  text-align: left;
+  border: 1px solid #e2e8f0;
+}
+
+.quiz-container h2 {
+  margin-top: 0;
+  font-size: 1.35rem;
+  color: #0f172a;
+}
+
+.options-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+.options-list li {
+  margin-bottom: 0.85rem;
+}
+.options-list input[type="radio"] {
+  margin-right: 0.7rem;
+}
+.options-list label {
+  font-size: 1.08rem;
+  cursor: pointer;
+  color: #334155;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  transition: background 0.15s;
+}
+.options-list input[type="radio"]:focus + label,
+.options-list label:focus {
+  outline: 2px solid #2563eb;
+  background: #e0e7ff;
+}
+
+.feedback {
+  margin-top: 1.2rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.explanation {
+  font-weight: normal;
+  margin-top: 0.5rem;
+  color: #64748b;
+  font-size: 0.98rem;
+}
+
+button {
+  background: linear-gradient(90deg, #2563eb 0%, #1e40af 100%);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.6rem 1.4rem;
+  font-size: 1.05rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background 0.2s, box-shadow 0.2s;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.08);
+}
+button[disabled], button[aria-disabled="true"] {
+  background: #cbd5e1;
+  cursor: not-allowed;
+}
+button:hover:not([disabled]):not([aria-disabled="true"]) {
+  background: linear-gradient(90deg, #1d4ed8 0%, #1e40af 100%);
+}
+
+@media (max-width: 600px) {
+  .quiz-container {
+    padding: 1.2rem 0.5rem;
+  }
+}
